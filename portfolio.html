@@ -27,41 +27,112 @@
       .font-bold {
         font-weight: 700;
       }
+
+      .head-div {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1000;
+        background-color: white;
+      }
+      #about-me {
+        margin-top: 7rem !important;
+        margin-bottom: 3rem !important;
+      }
+
+      .social-icon {
+        height: 64px;
+        position: fixed;
+        right: 25px;
+        z-index: 99999;
+        border-radius: 100px;
+      }
+
+      #linkedin-icon {
+        bottom: 125px;
+      }
+
+      #git-icon {
+        bottom: 75px;
+        background-color: white;
+      }
+
+      #whatsapp-icon {
+        bottom: 25px;
+      }
+      .my-name {
+        font-size: 3rem;
+      }
+
+      .card:hover {
+        border-color: aqua;
+        border-width: 2px;
+      }
+      .btn-outline-dark:hover {
+        color: white !important;
+      }
+
+      .nameLink {
+        text-decoration: none;
+      }
     </style>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
-      <a class="navbar-brand text-white" href="#">&lt;Meu Portfólio /&gt;</a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-        </ul>
+    <nav
+      class="navbar navbar-expand-lg navbar-light head-div border bg-card text-card-foreground shadow-sm p-4 rounded-none"
+    >
+      <div class="container">
+        <h1 class="font-weight-semibold fs-4">
+          &lt;I'm <span class="text-primary">Wanderson</span> /&gt;
+        </h1>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto gap-4">
+            <li class="nav-item">
+              <a
+                class="btn btn-outline-dark text-dark"
+                href="#favorites-container"
+                >Main Projects</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="btn btn-outline-dark text-dark"
+                href="#projects-container"
+                >Other Projects</a
+              >
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
-    <div class="container my-5">
+    <div class="container" id="about-me">
       <div class="row">
         <div
           class="col d-flex flex-column justify-content-center gap-2 pl-24 max-sm:p-0 animate-fade-right"
         >
-          <h1 class="font-bold" style="font-size: 3rem">
-            Wanderson Soares dos Santos
+          <h1>
+            Hi, my name is
+            <span class="font-bold my-name">Wanderson.</span>
+            <br />
           </h1>
+          <p class="font-bold text-primary">Who am i?</p>
+          <h4 style="max-width: 500px">
+            I'm a developer focused on back-end, but also can do some tricks on
+            the front-end. Welcome to my Portfolio!
+          </h4>
           <div>
-            <strong>Principais Tecnologias</strong>
+            <strong>Main Technologies</strong>
             <div>
               <img
                 width="30"
@@ -99,19 +170,13 @@
             </div>
           </div>
         </div>
-        <div class="col">
-          <img
-            class="rounded-circle"
-            src="https://my-gitfolio.vercel.app/_next/image?url=https%3A%2F%2Favatars.githubusercontent.com%2Fu%2F57503454%3Fv%3D4&w=384&q=75"
-          />
-        </div>
       </div>
     </div>
     <div class="container mb-5" id="favorites-container">
-      <h3 class="text-center my-5 font-bold">Principais Projetos</h3>
+      <h3 class="text-center my-5 font-bold">Main Projects</h3>
     </div>
     <div class="container mb-5" id="projects-container">
-      <h3 class="text-center my-5 font-bold">Outros Projetos</h3>
+      <h3 class="text-center my-5 font-bold">Other Projects</h3>
     </div>
     <div>
       <a
@@ -120,31 +185,17 @@
       >
         <img
           src="https://cdn.icon-icons.com/icons2/2429/PNG/512/linkedin_logo_icon_147268.png"
-          style="
-            height: 64px;
-            position: fixed;
-            bottom: 125px;
-            right: 25px;
-            z-index: 99999;
-          "
+          id="linkedin-icon"
           data-selector="img"
-          class="imagem2"
+          class="social-icon"
       /></a>
 
       <a href="https://github.com/wand-CE" target="_blank">
         <img
           src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
-          style="
-            background-color: rgb(255, 255, 255);
-            border-radius: 100px;
-            height: 64px;
-            position: fixed;
-            bottom: 75px;
-            right: 25px;
-            z-index: 99999;
-          "
+          id="git-icon"
           data-selector="img"
-          class="imagem2"
+          class="social-icon"
       /></a>
 
       <a
@@ -153,19 +204,16 @@
       >
         <img
           src="https://static-00.iconduck.com/assets.00/whatsapp-icon-2040x2048-8b5th74o.png"
-          style="
-            height: 64px;
-            position: fixed;
-            bottom: 25px;
-            right: 25px;
-            z-index: 99999;
-          "
+          id="whatsapp-icon"
           data-selector="img"
-          class="imagem2"
+          class="social-icon"
       /></a>
     </div>
     <footer class="p-4 text-center bg-primary text-sm text-white">
-      <p>© Desenvolvido por Wanderson</p>
+      <p>
+        © Developed by
+        <a class="nameLink" href="https://github.com/wand-CE">Wanderson</a>
+      </p>
     </footer>
     <script>
       const projectsCont = document.getElementById("projects-container");
@@ -179,14 +227,16 @@
         return currentRow;
       }
 
-      function createColumn(name, url, lang, desc) {
+      function createColumn(name, url, lang, desc = null) {
+        let nameMod = name[0].toUpperCase() + name.slice(1);
+
         let element = document.createElement("div");
         element.className = "col-sm-6 col-md-3 text-center";
         element.style.width = "18rem";
         element.innerHTML = `
         <div class='card'>
             <div class="card-body">
-              <h5 class="card-title">${name}</h5>
+              <h5 class="card-title">${nameMod}</h5>
               <p class='card-text'>${desc ? desc : ""}</p>
               <p class="">${lang ? lang : "-"}</p>
               <a href="${url}" target='_blank' class="btn btn-primary">Repositório</a>
