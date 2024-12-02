@@ -1,233 +1,239 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Meu Portfólio</title>
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-      crossorigin="anonymous"
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous"
     />
     <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-      crossorigin="anonymous"
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+            crossorigin="anonymous"
     ></script>
     <style>
-      a {
-        color: white !important;
-      }
-      .card-title {
-        text-overflow: ellipsis;
-        white-space: nowrap;
-        overflow: hidden;
-      }
-      .font-bold {
-        font-weight: 700;
-      }
+        a {
+            color: white !important;
+        }
 
-      .head-div {
-        position: fixed;
-        top: 0;
-        width: 100%;
-        z-index: 1000;
-        background-color: white;
-      }
-      #about-me {
-        margin-top: 7rem !important;
-        margin-bottom: 3rem !important;
-      }
+        .card-title {
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+        }
 
-      .social-icon {
-        height: 64px;
-        position: fixed;
-        right: 25px;
-        z-index: 99999;
-        border-radius: 100px;
-      }
+        .font-bold {
+            font-weight: 700;
+        }
 
-      #linkedin-icon {
-        bottom: 125px;
-      }
+        .head-div {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            background-color: white;
+        }
 
-      #git-icon {
-        bottom: 75px;
-        background-color: white;
-      }
+        #about-me {
+            margin-top: 7rem !important;
+            margin-bottom: 3rem !important;
+        }
 
-      #whatsapp-icon {
-        bottom: 25px;
-      }
-      .my-name {
-        font-size: 3rem;
-      }
+        .social-icon {
+            height: 64px;
+            position: fixed;
+            right: 25px;
+            z-index: 99999;
+            border-radius: 100px;
+        }
 
-      .card:hover {
-        border-color: aqua;
-        border-width: 2px;
-      }
-      .btn-outline-dark:hover {
-        color: white !important;
-      }
+        #linkedin-icon {
+            bottom: 125px;
+        }
 
-      .nameLink {
-        text-decoration: none;
-      }
+        #git-icon {
+            bottom: 75px;
+            background-color: white;
+        }
+
+        #whatsapp-icon {
+            bottom: 25px;
+        }
+
+        .my-name {
+            font-size: 3rem;
+        }
+
+        .card:hover {
+            border-color: aqua;
+            border-width: 2px;
+        }
+
+        .btn-outline-dark:hover {
+            color: white !important;
+        }
+
+        .nameLink {
+            text-decoration: none;
+        }
+
+        .spinner-border {
+            width: 5rem;
+            height: 5rem;
+        }
     </style>
-  </head>
-  <body>
-    <nav
-      class="navbar navbar-expand-lg navbar-light head-div border bg-card text-card-foreground shadow-sm p-4 rounded-none"
-    >
-      <div class="container">
+</head>
+<body class="d-flex flex-column h-100 vsc-initialized">
+<nav class="navbar navbar-expand-lg navbar-light head-div border bg-card text-card-foreground shadow-sm p-4 rounded-none">
+    <div class="container">
         <h1 class="font-weight-semibold fs-4">
-          &lt;I'm <span class="text-primary">Wanderson</span> /&gt;
+            &lt;I'm <span class="text-primary">Wanderson</span> /&gt;
         </h1>
         <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
         >
-          <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ms-auto gap-4">
-            <li class="nav-item">
-              <a
-                class="btn btn-outline-dark text-dark"
-                href="#favorites-container"
-                >Main Projects</a
-              >
-            </li>
-            <li class="nav-item">
-              <a
-                class="btn btn-outline-dark text-dark"
-                href="#projects-container"
-                >Other Projects</a
-              >
-            </li>
-          </ul>
+            <ul class="navbar-nav ms-auto gap-4">
+                <li class="nav-item">
+                    <a class="btn btn-outline-dark text-dark" href="#favorites-container">Main Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="btn btn-outline-dark text-dark" href="#projects-container">Other Projects</a>
+                </li>
+            </ul>
         </div>
-      </div>
-    </nav>
-    <div class="container" id="about-me">
-      <div class="row">
+    </div>
+</nav>
+<div class="container" id="about-me">
+    <div class="row">
         <div
-          class="col d-flex flex-column justify-content-center gap-2 pl-24 max-sm:p-0 animate-fade-right"
+                class="col d-flex flex-column justify-content-center gap-2 pl-24 max-sm:p-0 animate-fade-right"
         >
-          <h1>
-            Hi, my name is
-            <span class="font-bold my-name">Wanderson.</span>
-            <br />
-          </h1>
-          <p class="font-bold text-primary">Who am i?</p>
-          <h4 style="max-width: 500px">
-            I'm a developer focused on back-end, but also can do some tricks on
-            the front-end. Welcome to my Portfolio!
-          </h4>
-          <div>
-            <strong>Main Technologies</strong>
+            <h1>
+                Hi, my name is
+                <span class="font-bold my-name">Wanderson.</span>
+                <br/>
+            </h1>
+            <p class="font-bold text-primary">Who am i?</p>
+            <h4 style="max-width: 500px">
+                I'm a developer focused on back-end, but also can do some tricks on
+                the front-end. Welcome to my Portfolio!
+            </h4>
             <div>
-              <img
-                width="30"
-                src="https://user-images.githubusercontent.com/25181517/183423507-c056a6f9-1ba8-4312-a350-19bcbc5a8697.png"
-                alt="Python"
-                title="Python"
-              /><img
-                width="30"
-                src="https://github.com/marwin1991/profile-technology-icons/assets/62091613/9bf5650b-e534-4eae-8a26-8379d076f3b4"
-                alt="Django"
-                title="Django"
-              /><img
-                width="30"
-                src="https://user-images.githubusercontent.com/25181517/117447155-6a868a00-af3d-11eb-9cfe-245df15c9f3f.png"
-                alt="JavaScript"
-                title="JavaScript"
-              />
-              <img
-                width="30"
-                src="https://user-images.githubusercontent.com/25181517/192158954-f88b5814-d510-4564-b285-dff7d6400dad.png"
-                alt="HTML"
-                title="HTML"
-              />
-              <img
-                width="30"
-                src="https://user-images.githubusercontent.com/25181517/183898674-75a4a1b1-f960-4ea9-abcb-637170a00a75.png"
-                alt="CSS"
-                title="CSS"
-              /><img
-                width="30"
-                src="https://user-images.githubusercontent.com/25181517/184103699-d1b83c07-2d83-4d99-9a1e-83bd89e08117.png"
-                alt="Selenium"
-                title="Selenium"
-              />
+                <strong>Main Technologies</strong>
+                <div>
+                    <img
+                            width="30"
+                            src="https://user-images.githubusercontent.com/25181517/183423507-c056a6f9-1ba8-4312-a350-19bcbc5a8697.png"
+                            alt="Python"
+                            title="Python"
+                    />
+                    <img
+                            width="30"
+                            src="https://github.com/marwin1991/profile-technology-icons/assets/62091613/9bf5650b-e534-4eae-8a26-8379d076f3b4"
+                            alt="Django"
+                            title="Django"
+                    />
+                    <img
+                            width="30"
+                            src="https://user-images.githubusercontent.com/25181517/117447155-6a868a00-af3d-11eb-9cfe-245df15c9f3f.png"
+                            alt="JavaScript"
+                            title="JavaScript"
+                    />
+                    <img
+                            width="30"
+                            src="https://user-images.githubusercontent.com/25181517/192158954-f88b5814-d510-4564-b285-dff7d6400dad.png"
+                            alt="HTML"
+                            title="HTML"
+                    />
+                    <img
+                            width="30"
+                            src="https://user-images.githubusercontent.com/25181517/183898674-75a4a1b1-f960-4ea9-abcb-637170a00a75.png"
+                            alt="CSS"
+                            title="CSS"
+                    />
+                    <img
+                            width="30"
+                            src="https://user-images.githubusercontent.com/25181517/184103699-d1b83c07-2d83-4d99-9a1e-83bd89e08117.png"
+                            alt="Selenium"
+                            title="Selenium"
+                    />
+                </div>
             </div>
-          </div>
         </div>
-      </div>
     </div>
-    <div class="container mb-5" id="favorites-container">
-      <h3 class="text-center my-5 font-bold">Main Projects</h3>
+</div>
+<div class="container" id="favorites-container">
+    <h3 class="text-center my-5 font-bold">Main Projects</h3>
+    <div class="col-12 d-flex justify-content-center my-5 spinner-div">
+        <div class="spinner-border" role="status"></div>
     </div>
-    <div class="container mb-5" id="projects-container">
-      <h3 class="text-center my-5 font-bold">Other Projects</h3>
+</div>
+<div class="container" id="projects-container">
+    <h3 class="text-center my-5 font-bold">Other Projects</h3>
+    <div class="col-12 d-flex justify-content-center my-5 spinner-div">
+        <div class="spinner-border" role="status"></div>
     </div>
-    <div>
-      <a
-        href="https://www.linkedin.com/in/wanderson-soares-235ba819a/"
-        target="_blank"
-      >
+</div>
+<div>
+    <a href="https://www.linkedin.com/in/wanderson-soares-235ba819a/" target="_blank">
         <img
-          src="https://cdn.icon-icons.com/icons2/2429/PNG/512/linkedin_logo_icon_147268.png"
-          id="linkedin-icon"
-          data-selector="img"
-          class="social-icon"
-      /></a>
+                src="https://cdn.icon-icons.com/icons2/2429/PNG/512/linkedin_logo_icon_147268.png"
+                id="linkedin-icon"
+                data-selector="img"
+                class="social-icon"
+        />
+    </a>
 
-      <a href="https://github.com/wand-CE" target="_blank">
+    <a href="https://github.com/wand-CE" target="_blank">
         <img
-          src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
-          id="git-icon"
-          data-selector="img"
-          class="social-icon"
-      /></a>
+                src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
+                id="git-icon"
+                data-selector="img"
+                class="social-icon"
+        />
+    </a>
 
-      <a
-        href="https://api.whatsapp.com/send?l=pt&amp;phone=69993908500"
-        target="_blank"
-      >
+    <a href="https://api.whatsapp.com/send?l=pt&amp;phone=69993908500" target="_blank">
         <img
-          src="https://static-00.iconduck.com/assets.00/whatsapp-icon-2040x2048-8b5th74o.png"
-          id="whatsapp-icon"
-          data-selector="img"
-          class="social-icon"
-      /></a>
-    </div>
-    <footer class="p-4 text-center bg-primary text-sm text-white">
-      <p>
+                src="https://static-00.iconduck.com/assets.00/whatsapp-icon-2040x2048-8b5th74o.png"
+                id="whatsapp-icon"
+                data-selector="img"
+                class="social-icon"
+        />
+    </a>
+</div>
+<footer class="p-4 text-center bg-primary text-sm text-white footer mt-auto">
+    <p>
         © Developed by
         <a class="nameLink" href="https://github.com/wand-CE">Wanderson</a>
-      </p>
-    </footer>
-    <script>
-      const projectsCont = document.getElementById("projects-container");
-      const projectsFavorites = document.getElementById("favorites-container");
+    </p>
+</footer>
+<script>
+    const projectsCont = document.getElementById("projects-container");
+    const projectsFavorites = document.getElementById("favorites-container");
 
-      let currentRow;
+    let currentRow;
 
-      function createRow() {
+    function createRow() {
         currentRow = document.createElement("div");
-        currentRow.className = "row justify-content-center g-5";
+        currentRow.className = "row g-5";
         return currentRow;
-      }
+    }
 
-      function createColumn(name, url, lang, desc = null) {
+    function createColumn(name, url, lang, desc = null) {
         let nameMod = name[0].toUpperCase() + name.slice(1);
 
         let element = document.createElement("div");
@@ -240,51 +246,64 @@
               <p class='card-text'>${desc ? desc : ""}</p>
               <p class="">${lang ? lang : "-"}</p>
               <a href="${url}" target='_blank' class="btn btn-primary">Repositório</a>
-            </div>`;
+            </div>
+        </div>`;
 
         return element;
-      }
+    }
 
-      let listFavorites = [];
+    let listFavorites = [];
 
-      fetch("https://gh-pinned-api.vercel.app/api?user=wand-CE")
+    fetch("https://gh-pinned-api.vercel.app/api?user=wand-CE")
         .then((res) => res.json())
         .then((data) => {
-          let currentRow = createRow();
-          projectsFavorites.appendChild(currentRow);
-
-          data.forEach((item) => {
-            let column = createColumn(
-              item.name,
-              item.url,
-              item.languages[0],
-              item.description
-            );
-            currentRow.appendChild(column);
-            listFavorites.push(item.name);
-          });
-          getOtherProjects();
-        });
-
-      function getOtherProjects() {
-        fetch("https://api.github.com/users/wand-ce/repos?sort=updated")
-          .then((res) => res.json())
-          .then((data) => {
             let currentRow = createRow();
-            projectsCont.appendChild(currentRow);
+            projectsFavorites.appendChild(currentRow);
+
+            if (data.length) {
+                projectsFavorites.querySelector(".spinner-div").remove();
+                projectsFavorites.className += ' mb-5';
+            }
 
             data.forEach((item) => {
-              if (!listFavorites.includes(item.name)) {
                 let column = createColumn(
-                  item.name,
-                  item.html_url,
-                  item.language
+                    item.name,
+                    item.url,
+                    item.languages[0],
+                    item.description
                 );
+
                 currentRow.appendChild(column);
-              }
+                listFavorites.push(item.name);
             });
-          });
-      }
-    </script>
-  </body>
+            getOtherProjects();
+        });
+
+    function getOtherProjects() {
+        fetch("https://api.github.com/users/wand-ce/repos?sort=updated")
+            .then((res) => res.json())
+            .then((data) => {
+                let currentRow = createRow();
+                projectsCont.appendChild(currentRow);
+
+                if (data.length) {
+                    projectsCont.querySelector(".spinner-div").remove();
+                    projectsCont.className += ' mb-5';
+                }
+
+
+                data.forEach((item) => {
+                    if (!listFavorites.includes(item.name)) {
+                        let column = createColumn(
+                            item.name,
+                            item.html_url,
+                            item.language
+                        );
+                        currentRow.appendChild(column);
+                    }
+                });
+            });
+    }
+</script>
+</body>
 </html>
