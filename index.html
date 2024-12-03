@@ -69,7 +69,7 @@
         }
 
         .card:hover {
-            border-color: aqua;
+            border-color: darkgrey;
             border-width: 2px;
         }
 
@@ -134,42 +134,7 @@
             <div>
                 <strong>Main Technologies</strong>
                 <div>
-                    <img
-                            width="30"
-                            src="https://user-images.githubusercontent.com/25181517/183423507-c056a6f9-1ba8-4312-a350-19bcbc5a8697.png"
-                            alt="Python"
-                            title="Python"
-                    />
-                    <img
-                            width="30"
-                            src="https://github.com/marwin1991/profile-technology-icons/assets/62091613/9bf5650b-e534-4eae-8a26-8379d076f3b4"
-                            alt="Django"
-                            title="Django"
-                    />
-                    <img
-                            width="30"
-                            src="https://user-images.githubusercontent.com/25181517/117447155-6a868a00-af3d-11eb-9cfe-245df15c9f3f.png"
-                            alt="JavaScript"
-                            title="JavaScript"
-                    />
-                    <img
-                            width="30"
-                            src="https://user-images.githubusercontent.com/25181517/192158954-f88b5814-d510-4564-b285-dff7d6400dad.png"
-                            alt="HTML"
-                            title="HTML"
-                    />
-                    <img
-                            width="30"
-                            src="https://user-images.githubusercontent.com/25181517/183898674-75a4a1b1-f960-4ea9-abcb-637170a00a75.png"
-                            alt="CSS"
-                            title="CSS"
-                    />
-                    <img
-                            width="30"
-                            src="https://user-images.githubusercontent.com/25181517/184103699-d1b83c07-2d83-4d99-9a1e-83bd89e08117.png"
-                            alt="Selenium"
-                            title="Selenium"
-                    />
+                    <img src="https://skillicons.dev/icons?i=python,flutter,javascript,django,selenium,docker,mysql,aws">
                 </div>
             </div>
         </div>
@@ -238,7 +203,6 @@
 
         let element = document.createElement("div");
         element.className = "col-sm-6 col-md-3 text-center";
-        element.style.width = "18rem";
         element.innerHTML = `
         <div class='card'>
             <div class="card-body">
@@ -261,8 +225,8 @@
             projectsFavorites.appendChild(currentRow);
 
             if (data.length) {
-                projectsFavorites.querySelector(".spinner-div").remove();
-                projectsFavorites.className += ' mb-5';
+                projectsFavorites.querySelector(".spinner-div").classList.add('d-none');
+                projectsFavorites.classList.add('mb-5');
             }
 
             data.forEach((item) => {
@@ -287,8 +251,8 @@
                 projectsCont.appendChild(currentRow);
 
                 if (data.length) {
-                    projectsCont.querySelector(".spinner-div").remove();
-                    projectsCont.className += ' mb-5';
+                    projectsCont.querySelector(".spinner-div").classList.add('d-none');
+                    projectsCont.classList.add('mb-5');
                 }
 
 
